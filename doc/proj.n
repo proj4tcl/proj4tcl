@@ -339,8 +339,10 @@ PROJ \fIhttps://proj\&.org\fR
 .IP [2]
 Quick start for projstrings \fIhttps://proj\&.org/usage/quickstart\&.html\fR
 .IP [3]
-Quick start for C API usage \fIhttps://proj\&.org/development/quickstart\&.html\fR
+Projections \fIhttps://proj\&.org/operations/projections/index\&.html\fR
 .IP [4]
+Quick start for C API usage \fIhttps://proj\&.org/development/quickstart\&.html\fR
+.IP [5]
 Reference \fIhttps://proj\&.org/development/reference/index\&.html\fR
 .PP
 .SH "BUGS, TODO, ETC"

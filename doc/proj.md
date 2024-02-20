@@ -95,6 +95,9 @@ must already be installed\)\.
   1. Quick start for projstrings
      [https://proj\.org/usage/quickstart\.html](https://proj\.org/usage/quickstart\.html)
 
+  1. Projections
+     [https://proj\.org/operations/projections/index\.html](https://proj\.org/operations/projections/index\.html)
+
   1. Quick start for C API usage
      [https://proj\.org/development/quickstart\.html](https://proj\.org/development/quickstart\.html)
 
