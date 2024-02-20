@@ -92,6 +92,9 @@ must already be installed\)\.
 
   1. PROJ [https://proj\.org](https://proj\.org)
 
+  1. Quick start for projstrings
+     [https://proj\.org/usage/quickstart\.html](https://proj\.org/usage/quickstart\.html)
+
   1. Quick start for C API usage
      [https://proj\.org/development/quickstart\.html](https://proj\.org/development/quickstart\.html)
 

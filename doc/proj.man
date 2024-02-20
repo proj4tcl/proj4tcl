@@ -43,6 +43,7 @@ longitude: 12, latitude: 55
 [section References]
 [list_begin enumerated]
 [enum] PROJ [uri https://proj.org]
+[enum] Quick start for projstrings [uri https://proj.org/usage/quickstart.html] 
 [enum] Quick start for C API usage [uri https://proj.org/development/quickstart.html]
 [enum] Reference [uri https://proj.org/development/reference/index.html]
 [list_end]
