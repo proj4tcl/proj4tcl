@@ -350,7 +350,7 @@ Reference \fIhttps://proj\&.org/development/reference/index\&.html\fR
 commands implemented only sufficient to run example\&.
 .PP
 .SH CATEGORY
-Mathematics
+gis
 .SH COPYRIGHT
 .nf
 Copyright (c) 2009-2024 Peter Dean

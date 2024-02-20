@@ -2,7 +2,7 @@
 [copyright {2009-2024 Peter Dean}]
 [moddesc {tcl math}]
 [titledesc {Projection calculations for tcl}]
-[category Mathematics]
+[category gis]
 [require proj]
 
 [description]

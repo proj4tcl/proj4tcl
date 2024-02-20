@@ -110,7 +110,7 @@ must already be installed\)\.
 
 # <a name='category'></a>CATEGORY
 
-Mathematics
+gis
 
 # <a name='copyright'></a>COPYRIGHT
 
