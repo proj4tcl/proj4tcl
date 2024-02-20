@@ -111,18 +111,18 @@ ProjCmd(ClientData data, Tcl_Interp * interp, int objc,
                 dir = PJ_INV;
             }
             // preferable to make unit conversions explicit in proj string
-            //            if (proj_angular_input(P, dir)) {
-            //                a.lp.lam = proj_torad(a.lp.lam);
-            //                a.lp.phi = proj_torad(a.lp.phi);
-            //            }
+                        if (proj_angular_input(P, dir)) {
+                            a.lp.lam = proj_torad(a.lp.lam);
+                            a.lp.phi = proj_torad(a.lp.phi);
+                        }
 
             a = proj_trans(P, dir, a);
 
             // preferable to make unit conversions explicit in proj string
-            //            if (proj_angular_output(P, dir)) {
-            //                a.lp.lam = proj_todeg(a.lp.lam);
-            //                a.lp.phi = proj_todeg(a.lp.phi);
-            //            }
+                        if (proj_angular_output(P, dir)) {
+                            a.lp.lam = proj_todeg(a.lp.lam);
+                            a.lp.phi = proj_todeg(a.lp.phi);
+                        }
 
             Tcl_Obj *listPtr = Tcl_NewListObj(0, NULL);
             for (int i=0; i<n; i++) {
