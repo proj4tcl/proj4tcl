@@ -361,6 +361,7 @@ dist: dist-clean $(srcdir)/manifest.uuid
 	# Extension files
 	$(DIST_INSTALL_DATA) \
 	    $(srcdir)/README.md \
+	    $(srcdir)/INSTALL.md \
 	    $(srcdir)/pkgIndex.tcl.in \
 	    $(DIST_DIR)/
 
