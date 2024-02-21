@@ -56,9 +56,12 @@ must already be installed\)\.
 
   - <a name='3'></a>__proj__ __norm__ *handle*
 
-    returns new handle
+    returns a new handle whose axis order is the one expected for visualization
+    purposes\.
 
   - <a name='4'></a>__proj__ __destroy__ *handle*
+
+    deallocate handle
 
   - <a name='5'></a>__proj__ __fwd__ *handle* *list*
 
@@ -66,7 +69,7 @@ must already be installed\)\.
 
   - <a name='6'></a>__proj__ __inv__ *handle* *list*
 
-    returns tranformed point
+    returns tranformed point using inverse transformation
 
 # <a name='section3'></a>Examples
 

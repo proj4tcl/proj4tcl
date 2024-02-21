@@ -300,15 +300,16 @@ returns handle
 returns handle
 .TP
 \fBproj\fR \fBnorm\fR \fIhandle\fR
-returns new handle
+returns a new handle whose axis order is the one expected for visualization purposes\&.
 .TP
 \fBproj\fR \fBdestroy\fR \fIhandle\fR
+deallocate handle
 .TP
 \fBproj\fR \fBfwd\fR \fIhandle\fR \fIlist\fR
 returns tranformed point
 .TP
 \fBproj\fR \fBinv\fR \fIhandle\fR \fIlist\fR
-returns tranformed point
+returns tranformed point using inverse transformation
 .PP
 .SH EXAMPLES
 .CS
