@@ -365,7 +365,7 @@ dist: dist-clean $(srcdir)/manifest.uuid
 	    $(srcdir)/pkgIndex.tcl.in \
 	    $(DIST_DIR)/
 
-	list='doc generic tests win'; \
+	list='demos doc generic tests win'; \
 	for p in $$list; do \
 	    if test -d $(srcdir)/$$p ; then \
 		$(INSTALL_DATA_DIR) $(DIST_DIR)/$$p; \
