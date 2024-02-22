@@ -46,7 +46,7 @@ puts [format "%.3f %.3f %.3f" {*}$result]
 
 puts ""
 
-set S    "+proj=pipeline  +zone=$zone +south +ellps=GRS80"
+set S    " +proj=pipeline  +zone=$zone +south +ellps=GRS80"
 append S " +step +inv +proj=utm"
 append S " +step +proj=vgridshift +grids=au_ga_AUSGeoid09_V1.01.tif"
 append S " +step +proj=utm"
@@ -56,7 +56,7 @@ puts [format "%.3f %.3f %.3f" {*}$result]
 
 puts ""
 
-set S    "+proj=pipeline  +zone=$zone +south +ellps=GRS80"
+set S    " +proj=pipeline  +zone=$zone +south +ellps=GRS80"
 append S " +step +inv +proj=utm"
 append S " +step +proj=vgridshift +grids=au_ga_AUSGeoid2020_20180201.tif"
 append S " +step +proj=utm"
