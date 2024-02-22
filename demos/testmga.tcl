@@ -22,14 +22,24 @@ puts [format "%.9f %.9f %.3f" {*}$result]
 set result2 [proj inv $cs $result]
 puts [format "%.5f %.5f %.3f\n" {*}$result2]
 
-puts "mga to mga gda94 to gda2020"
+puts "mga to mga gda94 to gda2020 helmert?"
 
 set cs [proj crs2crs EPSG:283$zone EPSG:78$zone]
 set result [proj fwd $cs $pos]
 puts [format "%.3f %.3f %.3f" {*}$result]
-set result2 [proj inv $cs $result]
-puts [format "%.3f %.3f %.3f\n" {*}$result2]
 
+puts ""
+puts "mga to mga gda94 to gda2020 gridshift"
+
+set S    " +proj=pipeline +zone=$zone +south +ellps=GRS80"
+append S " +step +inv +proj=utm"
+append S " +step +proj=hgridshift +grids=au_icsm_GDA94_GDA2020_conformal.tif"
+append S " +step +proj=utm"
+set cs [proj create $S]
+set result [proj fwd $cs $pos]
+puts [format "%.3f %.3f %.3f" {*}$result]
+
+puts ""
 puts "mga eht to ahd ausgeoid09 using 3steps"
 
 set mga2gda [proj crs2crs epsg:283$zone epsg:4283]
