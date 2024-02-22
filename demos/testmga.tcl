@@ -34,14 +34,14 @@ puts ""
 
 set mga2gda [proj crs2crs epsg:283$zone epsg:4283]
 set gda2ahd [proj crs2crs epsg:4939 epsg:9464]
-set result [proj inv $mga2gda [proj inv $gda2ahd [proj fwd $mga2gda $pos]]]
+set result [proj inv $mga2gda [proj fwd $gda2ahd [proj fwd $mga2gda $pos]]]
 puts [format "%.3f %.3f %.3f" {*}$result]
 
 puts ""
 
 set mga2gda [proj crs2crs epsg:78$zone epsg:7844]
 set gda2ahd [proj crs2crs epsg:7843 epsg:9463]
-set result [proj inv $mga2gda [proj inv $gda2ahd [proj fwd $mga2gda $pos]]]
+set result [proj inv $mga2gda [proj fwd $gda2ahd [proj fwd $mga2gda $pos]]]
 puts [format "%.3f %.3f %.3f" {*}$result]
 
 puts ""
@@ -51,7 +51,7 @@ append S " +step +inv +proj=utm"
 append S " +step +proj=vgridshift +grids=au_ga_AUSGeoid09_V1.01.tif"
 append S " +step +proj=utm"
 set cs [proj create $S]
-set result [proj inv $cs $pos]
+set result [proj fwd $cs $pos]
 puts [format "%.3f %.3f %.3f" {*}$result]
 
 puts ""
@@ -61,5 +61,5 @@ append S " +step +inv +proj=utm"
 append S " +step +proj=vgridshift +grids=au_ga_AUSGeoid2020_20180201.tif"
 append S " +step +proj=utm"
 set cs [proj create $S]
-set result [proj inv $cs $pos]
+set result [proj fwd $cs $pos]
 puts [format "%.3f %.3f %.3f" {*}$result]
